@@ -1,5 +1,7 @@
 package org.kivy.android;
-
+import android.content.DialogInterface;
+import android.app.AlertDialog;
+import android.view.KeyEvent;
 import android.os.SystemClock;
 
 import java.io.InputStream;
