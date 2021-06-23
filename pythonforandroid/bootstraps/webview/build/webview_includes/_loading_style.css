@@ -1,4 +1,9 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    --loading-color: blue
+}
 h1 {
     font-size: 30px;
     color: blue;
@@ -24,7 +29,7 @@ button {
 .loader,
 .loader:before,
 .loader:after {
-    background: #aaaaff;
+    background: var(--loading-color);
     -webkit-animation: load1 1s infinite ease-in-out;
     animation: load1 1s infinite ease-in-out;
     width: 1em;
@@ -56,11 +61,11 @@ button {
     0%,
     80%,
     100% {
-        box-shadow: 0 0 #aaaaff;
+        box-shadow: 0 0 var(--loading-color);
         height: 4em;
     }
     40% {
-        box-shadow: 0 -2em #aaaaff;
+        box-shadow: 0 -2em var(--loading-color);
         height: 5em;
     }
 }
@@ -68,11 +73,11 @@ button {
     0%,
     80%,
     100% {
-        box-shadow: 0 0 #aaaaff;
+        box-shadow: 0 0 var(--loading-color);
         height: 4em;
     }
     40% {
-        box-shadow: 0 -2em #aaaaff;
+        box-shadow: 0 -2em var(--loading-color);
         height: 5em;
     }
 }
