@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    animation: noflash .5s ease-in-out forwards;
     --loading-color: blue
 }
 h1 {
@@ -79,5 +79,10 @@ button {
     40% {
         box-shadow: 0 -2em var(--loading-color);
         height: 5em;
+    }
+}
+@keyframes noflash{
+    100%{
+        background-color: black;
     }
 }
